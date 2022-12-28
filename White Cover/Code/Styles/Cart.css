@@ -1,0 +1,17 @@
+.cart-card{
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+    padding:0 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: wheat;
+}
+.cart-image{
+    width:3%;
+    border-radius: 23px;
+}
+.cart-item-name{
+    font-size: 1rem;
+    font-weight: 400;
+}

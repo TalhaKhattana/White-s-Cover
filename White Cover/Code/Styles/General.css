@@ -1,0 +1,129 @@
+:root{
+    --main-color:#b35ac9;
+    --main-light:#cc5de8;
+    --body-color:#f0d9f7;
+    --text-color:#333638;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 62.5%;
+    font-family: 'Rubik' , sans-serif;
+    background-color: var(--body-color);
+    overflow-x: hidden;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    padding:1rem;
+    color: var(--text-color);
+    font-weight:500;
+    /* position: sticky; */
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+.navbar ul li{
+    padding: 0.1rem 1rem ;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all .5s;
+}
+.navbar ul li a:hover{
+    color: var(--main-color);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.322); */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.grid{
+    display: grid;
+    gap: 3rem;
+}
+.grid--col--2{
+    grid-template-columns:1fr 1fr ;
+}
+.primary-heading{
+    font-size: 3rem;
+    color: var(--text-color);
+}
+.secondary-heading{
+    font-size: 1.5rem;
+    color: #333638;
+}
+
+.end{
+    margin-bottom: 3.5rem;
+}
+.center{
+    text-align: center;
+}
+.btn{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: .8rem;
+    border: none;
+    border-radius: 10px;
+}
+.main-item-card{
+    width: 18rem;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 8%);
+}
+
+.card-img img{
+    width: 100%;
+    border-radius:15px 15px 0 0;
+}
+.card-text{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.card-heading{
+    color: #333638;
+    font-size: 2rem;
+}
+.card-list{
+    font-size: 1rem;
+}
+.card-list li{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom:.5rem ;
+}
+.icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #333638;
+}
+.card-btn{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.card-btn button{
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 15px 20px;
+}
+.head-padd{
+    padding: 2rem;
+}
+.hidden{
+    display: none;
+}
